@@ -476,7 +476,7 @@ function showDashboard(){
   let cont="";
   if(last){const ls=SECTIONS.find(x=>x.id===last);if(ls&&ls.parent){const pt=getCh(ls.parent);cont=`<div class="db-continue" onclick="showSection('${ls.id}')"><div class="dc-icon"><i class="fas fa-play-circle"></i></div><div class="dc-info"><div class="dc-lbl">Continue</div><div class="dc-title">${ls.title}</div><div class="dc-ch">${pt?pt.title:""}</div></div><i class="fas fa-chevron-right" style="color:var(--muted)"></i></div>`}}
   document.getElementById("content").innerHTML=`
-    <div class="db-hero"><div class="db-icon"><i class="fas fa-graduation-cap"></i></div><h1>BAC ENGLISH</h1><div class="db-sub">Complete Study Guide for Moroccan Baccalaureate</div></div>
+    <div class="db-hero"><div class="db-icon"><i class="fas fa-graduation-cap"></i></div><h1>BAC ENGLISH</h1><div class="db-sub">By Abdelhamid Haji </div></div>
     ${cont}
     <div class="db-stats"><div class="db-stat"><span class="ds-num">${total}</span><span class="ds-lbl">Lessons</span></div><div class="db-stat"><span class="ds-num">${done}/${total}</span><span class="ds-lbl">Completed</span></div><div class="db-stat violet"><span class="ds-num">${Math.round(done/total*100)}%</span><span class="ds-lbl">Progress</span></div></div>
     <div class="db-title"><i class="fas fa-book-open"></i> Your Learning Path</div>
